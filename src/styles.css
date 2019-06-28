@@ -6,6 +6,10 @@
 
 }
 
+#instructionCard {
+  text-align: center;
+}
+
 #mercurySide, #venusSide, #earthSide, #marsSide, #jupiterSide, #saturnSide,#uranusSide,#neptuneSide,#plutoSide {
 text-align: right;
 }
@@ -13,6 +17,7 @@ text-align: right;
 #solSystem {
   height: 100%;
   width: 100%;
+  background: url("https://graffitiwallpaper.com/pics/listings/337_tall.jpg") no-repeat scroll center top transparent;
 }
 
 #inputCard {
@@ -24,7 +29,20 @@ text-align: right;
   margin-top: 20px;
 }
 
+#venusSide, #mercurySide, #earthSide, #marsSide, #jupiterSide, #saturnSide, #neptuneSide, #uranusSide, #plutoSide {
+  border-right: 1px dashed white;
+  margin-bottom: 20px;
+}
 
+#venusInfo, #mercuryInfo, #earthInfo, #marsInfo, #jupiterInfo, #saturnInfo, #neptuneInfo, #uranusInfo, #plutoInfo {
+  display: none;
+  margin-top: 10px;
+}
+
+.userName, .styleText,  #venusYears, #mercuryYears, #earthYears, #marsYears, #jupiterYears, #saturnYears, #neptuneYears, #uranusYears, #plutoYears, #venusExpectancy, #mercuryExpectancy, #earthExpectancy, #marsExpectancy, #jupiterExpectancy, #saturnExpectancy, #neptuneExpectancy, #uranusExpectancy, #plutoExpectancy {
+  color: #19ffc5;
+  text-shadow: 1px 1px 2px black;
+}
 
 #venus {
   height: 140px;

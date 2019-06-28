@@ -37,71 +37,92 @@
         </div>
       </div>
       <div class="card bg-dark" id="instructionCard">
-        <div class="card-header bg-warning">
+        <div class="card-header bg-info">
           <h3>Welcome to Sol</h3>
         </div>
         <div class="card-body">
           <p>Here, you can view information about the various planets in our system...</p>
           <p>Go ahead. Explore!</p>
           <p>You never know what you might learn...</p>
-          <button type="button" class="btn btn-outline-warning" name="hideInstructions" id="hideInstructions">Okay</button>
+          <p class="styleText">Start by clicking on the yellow buttons!</p>
+          <button type="button" class="btn btn-outline-info" name="hideInstructions" id="hideInstructions">Okay</button>
         </div>
       </div>
-      <div class="card bg-dark" id="solSystem">
+      <div class="card bg-dark card-image-overlay" id="solSystem">
         <span id="sol"></span>
         <div class="row" id="mercuryRow">
           <div class="col-lg-6" id="mercurySide">
             <span class="planet" id="mercury"></span>
-            <h2>&#9791;</h2>
+            <button type="button" id="mercuryButton" class="btn btn-warning">&#9791;</button>
+
           </div>
 
           <div class="col-lg-6" id="mercuryInfoSide">
-
+            <div class="card bg-secondary" id="mercuryInfo">
+              <p>Mercury is the smallest planet in our solar system. It’s just a little bigger than Earth’s moon. It is the closest planet to the sun, but it’s actually not the hottest. Venus is hotter.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="mercuryYears"></span> years old in Mercury years? You're only expected to live for another <span id="mercuryExpectancy"></span> more Mercury years! Yikes!</p>
+            </div>
           </div>
         </div>
 
         <div class="row" id="venusRow">
           <div class="col-lg-6" id="venusSide">
             <span class="planet" id="venus"></span>
-            <h2>&#9792;</h2>
+            <button type="button" id="venusButton" class="btn btn-warning">&#9792;</button>
+
           </div>
 
           <div class="col-lg-6" id="venusInfoSide">
-
+            <div class="card bg-secondary" id="venusInfo">
+              <p>Even though Venus isn't the closest planet to the sun, it is still the hottest. It has a thick atmosphere full of the greenhouse gas carbon dioxide and clouds made of sulfuric acid. The gas traps heat and keeps Venus toasty warm. In fact, it's so hot on Venus, metals like lead would be puddles of melted liquid.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="venusYears"></span> years old in Venus years? You're only expected to live for another <span id="venusExpectancy"></span> more Venus years! Yikes!</p>
+            </div>
           </div>
         </div>
 
 
         <div class="row" id="earthRow">
           <div class="col-lg-6" id="earthSide">
+
             <span class="planet" id="earth"></span>
-            <h2>	&#9793;</h2>
+            <button type="button" id="earthButton" class="btn btn-warning">&#9793;</button>
           </div>
 
           <div class="col-lg-6" id="earthInfoSide">
-
+            <div class="card bg-secondary" id="earthInfo">
+              <p>Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean planet. Water covers 70% of Earth's surface.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="earthYears"></span> years old in Earth years? You're only expected to live for another <span id="earthExpectancy"></span> more years! Yikes!</p>
+            </div>
           </div>
         </div>
 
         <div class="row" id="marsRow">
           <div class="col-lg-6" id="marsSide">
             <span class="planet" id="mars"></span>
-            	<h2>&#9794;</h2>
+            <button type="button" id="marsButton" class="btn btn-warning">&#9794;</button>
+
           </div>
 
           <div class="col-lg-6" id="marsInfoSide">
-
+            <div class="card bg-secondary" id="marsInfo">
+              <p>Mars is a cold desert world. It is half the size of Earth. Mars is sometimes called the Red Planet. It's red because of rusty iron in the ground.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="marsYears"></span> years old in Mars years? You're only expected to live for another <span id="marsExpectancy"></span> more Mars years! Yikes!</p>
+            </div>
           </div>
         </div>
 
         <div class="row" id="jupiterRow">
           <div class="col-lg-6" id="jupiterSide">
             <span class="planet" id="jupiter"></span>
-            <h2>&#9795;</h2>
+            <button type="button" id="jupiterButton" class="btn btn-warning">&#9795;</button>
+
           </div>
 
           <div class="col-lg-6" id="jupiterInfoSide">
-
+            <div class="card bg-secondary" id="jupiterInfo">
+              <p>Jupiter is the biggest planet in our solar system. It's similar to a star, but it never got big enough to start burning. It is covered in swirling cloud stripes. It has big storms like the Great Red Spot, which has been going for hundreds of years.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="jupiterYears"></span> years old in Jupiter years? You're only expected to live for another <span id="jupiterExpectancy"></span> more Jupiter years! Yikes!</p>
+            </div>
           </div>
         </div>
 
@@ -109,22 +130,30 @@
         <div class="row" id="saturnRow">
           <div class="col-lg-6" id="saturnSide">
             <span class="planet" id="saturn"></span>
-            <h2>&#9796;</h2>
+            <button type="button" id="saturnButton" class="btn btn-warning">&#9796;</button>
+
           </div>
 
           <div class="col-lg-6" id="saturnInfoSide">
-
+            <div class="card bg-secondary" id="saturnInfo">
+              <p>Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones. The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of chunks of ice and rock. Like Jupiter, Saturn is mostly a ball of hydrogen and helium.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="saturnYears"></span> years old in Saturn years? You're only expected to live for another <span id="saturnExpectancy"></span> more Saturn years! Yikes!</p>
+            </div>
           </div>
         </div>
 
         <div class="row" id="uranusRow">
           <div class="col-lg-6" id="uranusSide">
             <span class="planet" id="uranus"></span>
-            	<h2>&#9797;</h2>
+              <button type="button" id="uranusButton" class="btn btn-warning">&#9797;</button>
+
           </div>
 
           <div class="col-lg-6" id="uranusInfoSide">
-
+            <div class="card bg-secondary" id="uranusInfo">
+              <p>Uranus is made of water, methane, and ammonia fluids above a small rocky center. Its atmosphere is made of hydrogen and helium like Jupiter and Saturn, but it also has methane. The methane makes Uranus blue.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="uranusYears"></span> years old in Uranus years? You're only expected to live for another <span id="uranusExpectancy"></span> more Uranus years! Yikes!</p>
+            </div>
           </div>
         </div>
 
@@ -132,22 +161,29 @@
         <div class="row" id="neptuneRow">
           <div class="col-lg-6" id="neptuneSide">
             <span class="planet" id="neptune"></span>
-            <h2>&#9798;</h2>
+            <button type="button" id="neptuneButton" class="btn btn-warning">&#9798;</button>
           </div>
 
           <div class="col-lg-6" id="neptuneInfoSide">
-
+            <div class="card bg-secondary" id="neptuneInfo">
+              <p>Neptune is dark, cold, and very windy. It's the last of the planets in our solar system. It's more than 30 times as far from the sun as Earth is. Neptune is very similar to Uranus. It's made of a thick soup of water, ammonia, and methane over an Earth-sized solid center. </p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="neptuneYears"></span> years old in Neptune years? You're only expected to live for another <span id="neptuneExpectancy"></span> more Neptune years! Yikes!</p>
+            </div>
           </div>
         </div>
 
         <div class="row" id="plutoRow">
           <div class="col-lg-6" id="plutoSide">
             <span class="planet" id="pluto"></span>
-            <h2>&#9799;</h2>
+            <button type="button" id="plutoButton" class="btn btn-warning">&#9799;</button>
+
           </div>
 
           <div class="col-lg-6" id="plutoInfoSide">
-
+            <div class="card bg-secondary" id="plutoInfo">
+              <p>Pluto is categorized as a dwarf planet. In 2006, Pluto was categorized with three other objects in the solar system that are about the same small size as Pluto: Ceres, Makemake and Eris. These objects, along with Pluto, are much smaller than the "other" planets.</p>
+              <p>Hey, <span class="userName"></span>, did you know that you're <span id="plutoYears"></span> years old in Pluto years? You're only expected to live for another <span id="plutoExpectancy"></span> more Pluto years! Yikes!</p>
+            </div>
           </div>
         </div>
       </div>
