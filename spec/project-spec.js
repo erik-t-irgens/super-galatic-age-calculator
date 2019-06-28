@@ -67,5 +67,48 @@ describe ("Person", function() {
     expect(plutoYears).toEqual(0.10483870967741936)
   });
 
+  //
+
+  it("Should test to see if marsExpectancy works", function() {
+    let marsExpectancy = testPerson.marsExpectancy();
+    expect(marsExpectancy).toEqual(27.659574468085108)
+  });
+
+  it("Should test to see if mercuryExpectancy works", function() {
+    let mercuryExpectancy = testPerson.mercuryExpectancy();
+    expect(mercuryExpectancy).toEqual(216.66666666666669)
+  });
+
+  it("Should test to see if venusExpectancy works", function() {
+    let venusExpectancy = testPerson.venusExpectancy();
+    expect(venusExpectancy).toEqual(83.87096774193549)
+  });
+
+  it("Should test to see if jupiterExpectancy works", function() {
+    let jupiterExpectancy = testPerson.jupiterExpectancy();
+    expect(jupiterExpectancy).toEqual(4.3844856661045535)
+  });
+
+
+  it("Should test to see if saturnExpectancy works", function() {
+    let saturnExpectancy = testPerson.saturnExpectancy();
+    expect(saturnExpectancy).toEqual(1.7652849916827917)
+  });
+
+  it("Should test to see if uranusExpectancy works", function() {
+    let uranusExpectancy = testPerson.uranusExpectancy();
+    expect(uranusExpectancy).toEqual(0.6168446026097272)
+  });
+
+  it("Should test to see if neptuneExpectancy works", function() {
+    let neptuneExpectancy = testPerson.neptuneExpectancy();
+    expect(neptuneExpectancy).toEqual(0.31553398058252424)
+  });
+
+  it("Should test to see if plutoExpectancy works", function() {
+    let plutoExpectancy = testPerson.plutoExpectancy();
+    expect(plutoExpectancy).toEqual(0.20967741935483872)
+  });
+
 
 });
