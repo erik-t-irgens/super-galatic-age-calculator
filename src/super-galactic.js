@@ -1,25 +1,23 @@
 // Backend logic with exports, functions, constructors, etc.
-export let currentDate = new Date();
+export var currentDate = new Date();
+export var testDOB = new Date(1992, 8, 9);
 
 
-export class DateOfBirth extends Date {
-
-  constructor (year, month, day) {
-    super();
-    this.year = year;
-    this.month = month;
-    this.day = day;
+export class Person {
+  constructor(name, dob) {
+    this.name = name;
+    this.dob = dob;
   }
 
-
-  getAge () {
-    let birthDate = testDOB;
-    var age = currentDate.getFullYear() - birthDate.getFullYear();
-    var month = currentDate.getMonth() - birthDate.getMonth();
-    if (month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate())) {
-        age --;
-    }
+  getAge() {
+    let ageMilliseconds = this.dob;
+    let currentAge = ((currentDate / 31536000000) - (ageMilliseconds / 31536000000));
+    let age = Math.floor(currentAge);
     return age;
   }
+
+  marsYears () {
+    let marsYears = Math.floor(this.getAge() * 1.88);
+    return marsYears;
+  }
 }
-export let testDOB = new Date (1992, 7, 9);
