@@ -10,6 +10,8 @@ import { testDOB } from './../src/super-galactic.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
- $("#testArea").text(testDOB.getString());
- $("#testArea").text(testDOB.getAge());
+ $("#testArea").append(testDOB+"<br>");
+ $("#testArea").append(testDOB.getFullYear()+"<br>");
+ $("#testArea").append(testDOB.getMonth()+"<br>");
+  $("#testArea").append(testDOB.getDate()+"<br>");
 });
