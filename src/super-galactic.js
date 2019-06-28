@@ -16,8 +16,46 @@ export class Person {
     return age;
   }
 
+
   marsYears () {
-    let marsYears = Math.floor(this.getAge() * 1.88);
+    let marsYears = this.getAge() / 1.88;
     return marsYears;
   }
+  mercuryYears () {
+    let mercuryYears = this.getAge() / .24;
+    return mercuryYears;
+  }
+  venusYears () {
+    let venusYears = this.getAge() / .62;
+    return venusYears;
+  }
+  jupiterYears () {
+    let jupiterYears = this.getAge() / 11.86;
+    return jupiterYears;
+  }
+//
+  saturnYears () {
+    let saturnYears = this.getAge() / 29.457;
+    return saturnYears;
+  }
+
+  uranusYears () {
+    let uranusYears = this.getAge() / 84.3;
+    return uranusYears;
+  }
+
+  neptuneYears () {
+    let neptuneYears = this.getAge() / 164.8;
+    return neptuneYears;
+  }
+
+  plutoYears () {
+    let plutoYears = this.getAge() / 248;
+    return plutoYears;
+  }
+
+
+
+
+
 }
