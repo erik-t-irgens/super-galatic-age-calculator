@@ -1,14 +1,156 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <title>Age Calculator</title>
   </head>
   <body>
-<p>random shit</p>
+    <div class="container">
+      <div class="card bg-dark" id="inputCard">
+        <div class="card-header bg-warning">
+          <h3>Let's Explore...</h3>
+        </div>
+        <div class="card-body">
+          <form id="userInputForm">
+            <input class="form-control" type="text" placeholder="Name..." id="nameInput">
+            <label class="my-1 mr-2">Date of Birth:</label>
+            <input class="form-control" type="number" placeholder="Day..." min="1" max="31" id="dayInput">
+            <select class="custom-select my-1 mr-sm-2" id="monthSelect">
+              <option selected>Select Month...</option>
+              <option value="0">January</option>
+              <option value="1">Februrary</option>
+              <option value="2">March</option>
+              <option value="3">April</option>
+              <option value="4">May</option>
+              <option value="5">June</option>
+              <option value="6">July</option>
+              <option value="7">August</option>
+              <option value="8">September</option>
+              <option value="9">October</option>
+              <option value="10">November</option>
+              <option value="11">December</option>
+            </select>
+            <input class="form-control" type="number" placeholder="Year..."  id="yearInput">
+            <br>
+            <button type="submit" class="btn btn-outline-warning" name="exploreButton">Explore</button>
+          </form>
+        </div>
+      </div>
+      <div class="card bg-dark" id="instructionCard">
+        <div class="card-header bg-warning">
+          <h3>Welcome to Sol</h3>
+        </div>
+        <div class="card-body">
+          <p>Here, you can view information about the various planets in our system...</p>
+          <p>Go ahead. Explore!</p>
+          <p>You never know what you might learn...</p>
+          <button type="button" class="btn btn-outline-warning" name="hideInstructions" id="hideInstructions">Okay</button>
+        </div>
+      </div>
+      <div class="card bg-dark" id="solSystem">
+        <span id="sol"></span>
+        <div class="row" id="mercuryRow">
+          <div class="col-lg-6" id="mercurySide">
+            <span class="planet" id="mercury"></span>
+            <h2>&#9791;</h2>
+          </div>
 
-<p id="testArea"></p>
+          <div class="col-lg-6" id="mercuryInfoSide">
+
+          </div>
+        </div>
+
+        <div class="row" id="venusRow">
+          <div class="col-lg-6" id="venusSide">
+            <span class="planet" id="venus"></span>
+            <h2>&#9792;</h2>
+          </div>
+
+          <div class="col-lg-6" id="venusInfoSide">
+
+          </div>
+        </div>
 
 
+        <div class="row" id="earthRow">
+          <div class="col-lg-6" id="earthSide">
+            <span class="planet" id="earth"></span>
+            <h2>	&#9793;</h2>
+          </div>
+
+          <div class="col-lg-6" id="earthInfoSide">
+
+          </div>
+        </div>
+
+        <div class="row" id="marsRow">
+          <div class="col-lg-6" id="marsSide">
+            <span class="planet" id="mars"></span>
+            	<h2>&#9794;</h2>
+          </div>
+
+          <div class="col-lg-6" id="marsInfoSide">
+
+          </div>
+        </div>
+
+        <div class="row" id="jupiterRow">
+          <div class="col-lg-6" id="jupiterSide">
+            <span class="planet" id="jupiter"></span>
+            <h2>&#9795;</h2>
+          </div>
+
+          <div class="col-lg-6" id="jupiterInfoSide">
+
+          </div>
+        </div>
+
+
+        <div class="row" id="saturnRow">
+          <div class="col-lg-6" id="saturnSide">
+            <span class="planet" id="saturn"></span>
+            <h2>&#9796;</h2>
+          </div>
+
+          <div class="col-lg-6" id="saturnInfoSide">
+
+          </div>
+        </div>
+
+        <div class="row" id="uranusRow">
+          <div class="col-lg-6" id="uranusSide">
+            <span class="planet" id="uranus"></span>
+            	<h2>&#9797;</h2>
+          </div>
+
+          <div class="col-lg-6" id="uranusInfoSide">
+
+          </div>
+        </div>
+
+
+        <div class="row" id="neptuneRow">
+          <div class="col-lg-6" id="neptuneSide">
+            <span class="planet" id="neptune"></span>
+            <h2>&#9798;</h2>
+          </div>
+
+          <div class="col-lg-6" id="neptuneInfoSide">
+
+          </div>
+        </div>
+
+        <div class="row" id="plutoRow">
+          <div class="col-lg-6" id="plutoSide">
+            <span class="planet" id="pluto"></span>
+            <h2>&#9799;</h2>
+          </div>
+
+          <div class="col-lg-6" id="plutoInfoSide">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

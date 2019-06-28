@@ -13,6 +13,22 @@ var testPerson = new Person ("Billy", testDOB);
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
- $("#testArea").append(testPerson.getAge());
+    $("#inputCard").slideDown(4000);
+  $("#userInputForm").submit(function(event){
+    let userDate = new Date (parseInt($("#yearInput").val()), parseInt($("#monthSelect").val()), parseInt($("#dayInput").val()))
+    let user = new Person ($("#nameInput").val(), userDate)
+
+    $("#inputCard").slideUp(4000);
+    $("#instructionCard").slideDown(4000);
+    $("#solSystem").slideDown(6000);
+    event.preventDefault();
+  });
+
+  // Button logic
+
+$("#hideInstructions").click(function(){
+  $("#instructionCard").slideUp(4000);
+
+});
 
 });

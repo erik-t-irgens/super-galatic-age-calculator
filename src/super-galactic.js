@@ -106,8 +106,4 @@ export class Person {
     return plutoExpectancy;
   }
 
-
-
-
-
 }

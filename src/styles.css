@@ -1,1 +1,92 @@
 /*  Styles! */
+#inputCard, #solSystem, #instructionCard {
+  display: none;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+#mercurySide, #venusSide, #earthSide, #marsSide, #jupiterSide, #saturnSide,#uranusSide,#neptuneSide,#plutoSide {
+text-align: right;
+}
+
+#solSystem {
+  height: 100%;
+  width: 100%;
+}
+
+#inputCard {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+.planet {
+  margin-top: 20px;
+}
+
+
+
+#venus {
+  height: 140px;
+  width: 140px;
+  background-color: #edce68;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#mercury {
+  height: 100px;
+  width: 100px;
+  background-color: #8a8a8a;
+  border-radius: 100%;
+  display: inline-block;
+}
+#earth {
+  height: 150px;
+  width: 150px;
+  background-color: #58a3d1;
+  border-radius: 100%;
+  display: inline-block;
+}
+#mars {
+  height: 120px;
+  width: 120px;
+  background-color: #b3481e;
+  border-radius: 100%;
+  display: inline-block;
+}
+#jupiter {
+  height: 300px;
+  width: 300px;
+  background-color: #b3841e;
+  border-radius: 100%;
+  display: inline-block;
+}
+#saturn {
+  height: 280px;
+  width: 280px;
+  background-color: #c4bc5e;
+  border-radius: 100%;
+  display: inline-block;
+}
+#uranus {
+  height: 250px;
+  width: 250px;
+  background-color: #8ed1ca;
+  border-radius: 100%;
+  display: inline-block;
+}
+#neptune {
+  height: 230px;
+  width: 230px;
+  background-color: #7597e6;
+  border-radius: 100%;
+  display: inline-block;
+}
+#pluto {
+  height: 50px;
+  width: 50px;
+  background-color: #ada999;
+  border-radius: 100%;
+  display: inline-block;
+}
