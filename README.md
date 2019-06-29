@@ -13,11 +13,11 @@ _User may input their name and their date of birth. Once they hit submit, the pr
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "<Date>" | Output: "<Date>" |
-| **Program calculates user's age**| User input: "<Date>" | Output: "<age>" |
-| **Program Calculates the age, in years, of other planets in the system**| User input: "<Date>" | Output: "<date>.planetMethod" |
-| **Program calculates the life expectancy of user**| User input: "<Date>" | Output: "<age>.expectancyMethod" |
-| **Program calculates the expectancy of user for all planets**|User input: "<Date>" | Output: "<age>.expectancyPlanetMethod" |
+| **Program Gathers User Input** | User input: "Date" | Output: "Date" |
+| **Program calculates user's age**| User input: "Date" | Output: "age" |
+| **Program Calculates the age, in years, of other planets in the system**| User input: "Date" | Output: "date.planetMethod" |
+| **Program calculates the life expectancy of user**| User input: "Date" | Output: "age.expectancyMethod" |
+| **Program calculates the expectancy of user for all planets**|User input: "Date" | Output: "age.expectancyPlanetMethod" |
 
 
 ## Setup/Installation Requirements
