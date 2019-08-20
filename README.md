@@ -22,9 +22,9 @@ _User may input their name and their date of birth. Once they hit submit, the pr
 
 ## Setup/Installation Requirements
 
-* _Clone down the repository from https://github.com/erik-t-irgens/super-galatic-age-calculator. _
-* _Initialize npm, and run npm install to install all packages. _
-* _Run "npm run start" to view the website. _
+* _Clone down the repository from https://github.com/erik-t-irgens/super-galatic-age-calculator._
+* _Initialize npm, and run npm install to install all packages._
+* _Run "npm run start" to view the website._
 * _Or visit the live site at https://erik-t-irgens.github.io/super-galactic-age-calculator_
 
 
